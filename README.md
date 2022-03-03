@@ -1,1 +1,5 @@
-# ALX shell basics project repo
+# ALX shell scripting Exercise
+
+## Shell basics
+
+## Shell permissions

@@ -3,3 +3,7 @@
 ## Shell basics
 
 ## Shell permissions
+
+## Shell redirections
+
+## Shell variables and expansions

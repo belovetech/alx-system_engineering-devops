@@ -1,4 +1,4 @@
-https://github.com/AdeGneus/alx-system_engineering-devops/blob/main/0x05-processes_and_signals/100-process_and_pid_file#!/usr/bin/env bash
+#!/usr/bin/env bash
 # This script creates the file /var/run/myscript.pid containing its PID.
 #+ displays "To infinity and beyond" indefinitely
 #+ displays "I hate the kill command" upon receiving a SIGTERM

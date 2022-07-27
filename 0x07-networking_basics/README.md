@@ -4,10 +4,9 @@ This project was the first of two introducing networking concepts. In this proje
 
 ## Tasks 📃
 
-- **1. OSI model**
+- **0. OSI model**
 
-  - 0-OSI_model: Text file answering the following questions:
-
+  - [0-OSI_model](https://alx-intranet.hbtn.io/rltoken/k2uCsynicuNbu1cAQhXqVQ): Text file answering the following questions:
   - What is the OSI model?
     a. Set of specifications that network hardware manufacturers must respect
     b. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology.
@@ -18,21 +17,22 @@ This project was the first of two introducing networking concepts. In this proje
     b. From the lowest to the highest level
     c. Randomly
 
-### Types of network
+- **1. Types of network**
 
-1-types_of_network: Text file answering the following questions:
+[1-types_of_network](https://github.com/bdbaraban/holberton-system_engineering-devops/blob/master/0x07-networking_basics/1-types_of_network): Text file answering the following questions:
 What type of network are Holberton iMacs connected to?
-Internet
-WAN
-LAN
-What type of network could connect an office in one building to another office in a building a few streets away?
-Internet
-WAN
-LAN
-What network do you use when you browse www.holbertonschool.com from your smartphone (not connected to the Wifi)?
-Internet
-WAN
-LAN 2. MAC and IP address
+
+- \*\*\*[Answer 1]
+  b. WAN
+  c. LAN
+  What type of network could connect an office in one building to another office in a building a few streets away?
+  Internet
+  WAN
+  LAN
+  What network do you use when you browse www.holbertonschool.com from your smartphone (not connected to the Wifi)?
+  Internet
+  WAN
+  LAN 2. MAC and IP address
 
 2-MAC_and_IP_address: Text file answering the following questions:
 What is a MAC address?

@@ -9,9 +9,11 @@ Tasks 📃
    0-OSI_model: Text file answering the following questions:
 
    - What is the OSI model?
+
      a. Set of specifications that network hardware manufacturers must respect
      b. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology.
      c. The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology.
+
    - How is the OSI model organized?
      a. Alphabetically
      b. From the lowest to the highest level

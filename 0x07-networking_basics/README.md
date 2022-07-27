@@ -5,6 +5,7 @@ This project was the first of two introducing networking concepts. In this proje
 Tasks 📃
 
 0. OSI model
+
    0-OSI_model: Text file answering the following questions:
 
    - What is the OSI model?

@@ -2,9 +2,9 @@
 
 This project was the first of two introducing networking concepts. In this project, I answered a few quiz-like questions and wrote a couple bash scripts while learning about the OSI model, LAN and WAN networks, and TCP/UDP data transfer protocols.
 
-Tasks 📃
+## Tasks 📃
 
-**0. OSI model**
+### 1. OSI model
 
     - 0-OSI_model: Text file answering the following questions:
     - What is the OSI model?
@@ -17,7 +17,7 @@ Tasks 📃
         b. From the lowest to the highest level
         c. Randomly
 
-1. Types of network
+### Types of network
 
 1-types_of_network: Text file answering the following questions:
 What type of network are Holberton iMacs connected to?

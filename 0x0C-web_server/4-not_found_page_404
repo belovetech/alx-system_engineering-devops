@@ -19,8 +19,8 @@ printf %s "server {
         listen 80;
         listen [::]:80 default_server;
                 
-        root /var/www/html/
-        index index.html index.htm index.html-debian.html
+        root /var/www/html/;
+        index index.html index.htm index.html-debian.html;
                 
         location /redirect_me{
             return 301 https://www.github.com/belovetech;

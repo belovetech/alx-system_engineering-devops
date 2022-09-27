@@ -6,9 +6,7 @@
 # Make sure that HAproxy can be managed via an init script
 
 # Enable a dedicated PPA with the following command:
-apt-get install
-add-apt-repository -y ppa:vbernat/haproxy-2.6
-
+apt-get -y install
 apt-get -y update
 # Install HAproxy
 apt-get install -y haproxy=2.6.\*

@@ -5,20 +5,18 @@
 # Distribute requests using a roundrobin algorithm
 # Make sure that HAproxy can be managed via an init script
 
-# Enable a dedicated PPA with the following command:
-apt-get -y install
-apt-get -y update
 # Install HAproxy
-apt-get install -y haproxy=2.6.\*
+apt-get -y update
+apt-get install -y haproxy
 
 # Load balancing configuration
 printf %s "
-frontend http
+frontend techgist.tech
     bind *:80
     mode http
-    default_backend web-backend
+    default_backend techgist-backend
 
-backend web-backend
+backend techgist-backend
     balance roundrobin
     option forwardfor
     server 26536-web-01 35.153.143.199:80 check

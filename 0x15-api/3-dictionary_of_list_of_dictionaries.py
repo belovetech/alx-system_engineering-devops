@@ -23,5 +23,4 @@ if __name__ == '__main__':
 
     filename = "todo_all_employees.json"
     with open(filename, "w", encoding="utf-8") as json_file:
-        json_text = json.dumps(dict)
-        json_file.write(json_text)
+        json.dump(dict, json_file)

@@ -16,16 +16,16 @@ if __name__ == '__main__':
 
     total_number_of_task = 0
     number_of_done_task = 0
-    employer_name = res1.json()['name']
+    employer_name = res1.json().get('name')
     titles = []
 
     for data in res2.json():
         if data.get('userId') == int(employer_id):
             total_number_of_task += 1
 
-            if data['completed'] is True:
+            if data.get('completed') is True:
                 number_of_done_task += 1
-                titles.append(data['title'])
+                titles.append(data.get('title'))
         else:
             continue
 

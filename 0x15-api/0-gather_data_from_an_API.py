@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-
-import json
-import os
+"""Returns to-do list information for a given employee ID."""
 import requests
 import sys
 
 
 if __name__ == '__main__':
+    # url = "https://jsonplaceholder.typicode.com"
     employer_id = sys.argv[1]
+
     res1 = requests.get(
         "https://jsonplaceholder.typicode.com/users/{}".format(employer_id))
 

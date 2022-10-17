@@ -7,17 +7,18 @@ import sys
 
 if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com"
-    id = sys.argv[1]
+    user_id = sys.argv[1]
 
-    user = requests.get("{}/users/{}".format(url, id)).json()
-    todos = requests.get(url + "/todos", params={"userId": id}).json()
+    user = requests.get("{}/users/{}".format(url, user_id)).json()
+    todos = requests.get(url + "/todos", params={"userId": user_id}).json()
 
     username = user.get('username')
-    filename = id + ".csv"
+    filename = user_id + ".csv"
 
     rows = []
     for data in todos:
-        rows.append([id, username, data.get('completed'), data.get('title')])
+        rows.append([user_id, username, data.get(
+            'completed'), data.get('title')])
 
     with open(filename, "w", newline="") as csvfile:
         writer = csv.writer(csvfile, delimiter=',',

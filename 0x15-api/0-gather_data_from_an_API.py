@@ -8,7 +8,7 @@ if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com"
     employer_id = sys.argv[1]
 
-    users = requests.get("{}/users/{}".format(url, employer_id)).json()
+    user = requests.get("{}/users/{}".format(url, employer_id)).json()
     todos = requests.get(url + "/todos", params={"userId": employer_id}).json()
 
     completed = [data.get('title')
@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     total_number_of_task = len(todos)
     number_of_done_task = len(completed)
-    employer_name = users.get('name')
+    employer_name = user.get('name')
 
     print("Employee {} is done with tasks({}/{}):".format(employer_name,
           number_of_done_task, total_number_of_task))

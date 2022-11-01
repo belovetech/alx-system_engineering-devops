@@ -19,9 +19,9 @@ def top_ten(subreddit):
         base_url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
         res = requests.get(base_url, headers=headers,
                            params=params, allow_redirects=False)
-        for post in res.json()['data']['children']:
-            for key, value in post['data'].items():
-                if key == 'title':
-                    print(value)
+
+        results = res.json()['data']['children']
+        for post in results:
+            print(post['data']['title'])
     except Exception:
         print(None)

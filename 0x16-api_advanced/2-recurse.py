@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Fetch titles of top 10 hot posts subreddit API"""
-from urllib import response
+"""Recursive function that queries the Reddit API"""
 import requests
 
 

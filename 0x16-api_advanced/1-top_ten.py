@@ -13,10 +13,11 @@ def top_ten(subreddit):
     headers = {'User-agent': 'myAPI'}
     listing = 'top'
     limit = 10
+    timeframe = 'day'
 
     try:
-        base_url = 'https://www.reddit.com/r/{}/{}.json?limit={}'.format(
-                                subreddit, listing, limit)
+        base_url = 'https://www.reddit.com/r/{}/{}.json?limit={}&t={}'.format(
+                                subreddit, listing, limit, timeframe)
         res = requests.get(base_url, headers=headers)
         for post in res.json()['data']['children']:
             for key, value in post['data'].items():

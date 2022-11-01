@@ -14,11 +14,11 @@ def top_ten(subreddit):
     params = {
         'limit': 10
     }
-  
 
     try:
         base_url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
-        res = requests.get(base_url, headers=headers, params=params, allow_redirects=False)
+        res = requests.get(base_url, headers=headers,
+                           params=params, allow_redirects=False)
         for post in res.json()['data']['children']:
             for key, value in post['data'].items():
                 if key == 'title':
